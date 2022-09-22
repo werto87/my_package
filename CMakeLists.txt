@@ -20,7 +20,7 @@ conan_basic_setup(TARGETS)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(TARGET_NAME_LIB my_package)
 add_library(${TARGET_NAME_LIB})
-add_subdirectory(src)
+add_subdirectory(my_package)
 target_include_directories(${TARGET_NAME_LIB} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories(${TARGET_NAME_LIB} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
